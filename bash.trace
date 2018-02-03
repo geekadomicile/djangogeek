@@ -21,3 +21,28 @@ python manage.py makemigrations purchases
 python manage.py migrate purchases
 vim purchases/admin.py
 vim purchases/views.py
+cd ../..
+git init
+git config --global user.name "Yevgueny KASSINE"
+git config --global user.email ykassine@geekadomicile.com
+vim .gitignore
+# amend with :
+#    *.pyc
+#    *~
+#    __pycache__
+#    myvenv
+#    db.sqlite3
+#    /static
+#    .DS_Store
+git add --all
+git status
+git remote add origin https://github.com/geekadomicile/djangogeek.git
+git commit -am "Init"
+git push -u origin master
+cd myvenv/mysite/
+vim mysite/urls.py
+# amend 
+#    from django.conf.urls import include
+#    urlpatterns = [..., url(r'', include('purchases.urls')),]
+vim purchases/urls.py
+

@@ -1,7 +1,11 @@
 *.pyc
 *~
 __pycache__
-myvenv
+myvenv/bin
+myvenv/include
+myvenv/lib
+myvenv/pip-selfcheck.json
+myvenv/pyvenv.cfg
 db.sqlite3
 /static
 .DS_Store

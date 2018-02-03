@@ -1,0 +1,9 @@
+{% extends 'purchases/base.html' %}
+
+{% block content %}
+<h1>Editer achat</h1>
+<form method="POST" class="new-purchase">{% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="save btn btn-default">Enregistrer</button>
+</form>
+{% endblock %}

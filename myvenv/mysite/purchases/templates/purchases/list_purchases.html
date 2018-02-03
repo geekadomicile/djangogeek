@@ -1,0 +1,13 @@
+{% extends 'purchases/base.html' %}
+
+{% block content %}
+<ul>
+    <li><a href="new/">+ New purchase</a></li>
+</ul>
+<h1>It wwwworks</h1>
+<ul>
+    {% for purchase in purchases %}
+    <li>{{purchase}}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
