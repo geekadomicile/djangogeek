@@ -1,3 +1,6 @@
+Used command-line
+-----------------
+::
 mkdir djangogeek
 cd djangogeek
 python3 -m venv myvenv
