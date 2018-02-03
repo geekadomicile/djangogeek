@@ -9,7 +9,7 @@ def list_purchases(request):
 
 def new_purchase(request):
     if request.method == "POST":
-        form = PurchaseForm(request.POST)
+        form = PurchaseFormSet(request.POST)
         if form.is_valid():
             purchase = form.save(commit=False)
             purchase.published_date = timezone.now()

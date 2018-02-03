@@ -20,6 +20,7 @@ vim purchases/models.py
 python manage.py makemigrations purchases
 python manage.py migrate purchases
 vim purchases/admin.py
+python manage.py createsuperuser
 vim purchases/views.py
 cd ../..
 git init
